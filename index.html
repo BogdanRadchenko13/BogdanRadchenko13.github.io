@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Puporn: Рандомайзер</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="Site-name">Puporn: Современный рандомайзер</h1>
+            <h5>Просто введи вопрос — и он предскажет.</h5>
+        </header>
+        <main>
+            <h2 class="questionSend" id="questionSending">Вопрос: </h2>
+            <div class="random-pogress">
+                <label for="Reply-Yes" class="status">Да: </label>
+                <progress value="0" max="100" id="Reply-Yes"></progress>
+                <br>
+                <label for="Reply-No" class="status">Нет: </label>
+                <progress value="0" max="100" id="Reply-No"></progress>
+                <br>
+                <h2>Результат: <span id="result"></span></h2>
+            </div>
+            <br>
+            <form onsubmit="return false;">
+                <input type="text" placeholder="Введите вопрос..." id="questionInput">
+                <br>
+                <input type="submit" value="Предсказать" id="launch">
+            </form>
+            <script src="script.js"></script>
+        </main>
+    </body>
+</html>

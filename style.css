@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #111;
+    color: white;
+    font-family: monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Заголовок вверху с отступом — можешь менять margin-top по вкусу */
+  header {
+    font-size: 20px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px; /* <<< ВОТ ТУТ МЕНЯЙ ВЫСОТУ */
+  }
+  
+  .Site-name {
+    background: linear-gradient(to right, #ff006a ,#ff006a ,#8000d6, #7300df);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  input[type="text"], input[type="submit"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #222;
+    border: 1px solid #555;
+    color: white;
+  }
+  
+  .random-progress {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+  }
+
+  /* Контейнер для прогресс-бара */
+  .progress-block {
+    width: 100%;
+    margin-top: 15px;
+    text-align: left;
+  }
+  
+  progress {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    background-color: #222;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .questionSend {
+    margin-top: -30%;
+    font-size: 30px;
+  }
+
+  .status {
+    font-size: 20px;
+  }
+
+  /* Google Chrome / Webkit (Progress) */
+  progress::-webkit-progress-value {
+    background: linear-gradient(to right, #ff006a ,#ff006a ,#8000d6, #7300df);
+    border-radius: 12px;
+    transition: width 0.3s ease;
+  }
+
+  /* Google Chrome / webkit (Progress-Bar) */
+  progress::-webkit-progress-bar {
+    background-color: #222;
+    border-radius: 12px;
+  }
+
+  /* FireFox (Progress) */
+  progress::-moz-progress-bar {
+    background: linear-gradient(to right, #ff006a ,#ff006a ,#8000d6, #7300df);
+    border-radius: 12px;
+    transition: width 0.3s ease;
+  }
+  
